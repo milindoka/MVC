@@ -13,10 +13,7 @@ public class Controller {
         this.model = model;
         this.view = view;
        // String path;
-     
 	     System.out.println(model.getJarPath()); ///set JAR path in model variable path;
-
-                          
     }
     
     public void contol()
@@ -30,8 +27,8 @@ public class Controller {
         view.getButton().addActionListener(actionListener);   
     }
     
-    private void linkBtnAndLabel(){
+    private void linkBtnAndLabel()
+    {
         model.incX();                
-        view.setText(Integer.toString(model.getX()));
     }    
 }
