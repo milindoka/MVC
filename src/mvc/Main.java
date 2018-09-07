@@ -10,9 +10,7 @@ public class Main
         {
            
             public void run() {                                           
-            	Model model = new Model(0);
-            	View view = new View("-"); 
-            	Controller controller = new Controller(model,view);
+            	Controller controller = new Controller();
             	controller.contol();
             }
         });  

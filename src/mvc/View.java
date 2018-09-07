@@ -10,9 +10,9 @@ public class View {
       
     private JFrame frame;
     private JButton button;
-
+    private JLabel labelCENTER;
     
-    public View(String text)
+    public View()
     {
         frame = new JFrame("View");                                    
                                                   
@@ -25,7 +25,9 @@ public class View {
 
         JLabel labelWEST = new JLabel("WEST");
         JLabel labelNORTH = new JLabel("NORTH",JLabel.CENTER);
-        JLabel labelCENTER = new JLabel("CENTER",JLabel.CENTER);
+        ////////////////
+        labelCENTER = new JLabel("CENTER",JLabel.CENTER);
+        ////////////////
         JLabel labelEAST = new JLabel("EAST");
         JPanel buttonpanel=new JPanel();
         
@@ -44,10 +46,10 @@ public class View {
     public JButton getButton(){
         return button;
     }
-  /*  
+    
     public void setText(String text){
-        label.setText(text);
+        labelCENTER.setText(text);
     }
-    */
+   
     
 }

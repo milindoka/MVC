@@ -9,9 +9,10 @@ public class Controller {
     private View view;
     private ActionListener actionListener;
     
-    public Controller(Model model, View view){
-        this.model = model;
-        this.view = view;
+    public Controller(){
+    	
+    	model=new Model(); view=new View();
+        
        // String path;
 	     System.out.println(model.getJarPath()); ///set JAR path in model variable path;
     }
@@ -29,6 +30,9 @@ public class Controller {
     
     private void linkBtnAndLabel()
     {
-        model.incX();                
+        model.incX();
+        int number=model.getX();
+        view.setText(String.format("%02d", number));
+       
     }    
 }

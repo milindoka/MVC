@@ -10,10 +10,6 @@ public class Model {
         x = 0;
     }
     
-    public Model(int x)  ///// Model Constructor
-    {
-        this.x = x;
-    }
     
     public void incX(){
         x++;
